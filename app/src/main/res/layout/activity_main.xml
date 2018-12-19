@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:orientation="vertical"
+android:background="#009688"
+tools:context=".MainActivity">
+
+<TextView
+    android:id="@+id/headerTxt"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="DownloadManager Example"
+    android:textAlignment="center"
+    android:fontFamily="casual"
+    android:textStyle="bold"
+    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+    android:textColor="@color/white" />
+
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:layout_centerHorizontal="true"
+    android:src="@drawable/logo"
+    android:contentDescription="@string/app_name"/>
+
+<LinearLayout
+    android:id="@+id/button_zone"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_centerInParent="true">
+
+    <Button
+        android:id="@+id/downloadBtn"
+        style="?android:attr/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="clickView"
+        android:text="Download" />
+    <Button
+        android:id="@+id/viewDownloadsBtn"
+        style="?android:attr/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="clickView"
+        android:text="View All" />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true">
+    <Button
+        android:id="@+id/openDownloadBtn"
+        style="?android:attr/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="clickView"
+        android:text="Open" />
+
+        <Button
+            android:id="@+id/deleteBtn"
+            style="?android:attr/button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="clickView"
+            android:text="Delete" />
+
+</LinearLayout>
+
+</LinearLayout>
